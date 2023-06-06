@@ -15,7 +15,7 @@ const categoryStore = useCategoryStore()
           <router-link to="/">首页</router-link>
         </li>
         <li class="home" v-for="item of categoryStore.categoryList" :key="item.id">
-          <RouterLink to="/">{{ item.name }}</RouterLink>
+          <RouterLink :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
         </li>
       </ul>
       <div class="search">

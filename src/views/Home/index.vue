@@ -1,3 +1,7 @@
+<script setup>
+import HomeCategory from './components/HomeCategory.vue';
+</script>
+
 <template>
-    <div>我是Home页</div>
+    <HomeCategory />
 </template>

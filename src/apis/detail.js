@@ -1,8 +1,8 @@
 import request from "@/utils/http"
 
-const getDetail = (id) => {
+export const getDetail = (id) => {
     return request({
-        url: "/good",
+        url: "/goods",
         params: {
             id
         }

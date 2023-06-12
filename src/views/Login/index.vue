@@ -36,7 +36,9 @@ const rules = {
 const formRef = ref(null)
 const doLogin = () => {
   formRef.value.validate((valid) => {
-    console.log(valid)
+    if (valid) {
+      
+    }
   })
 }
 </script>

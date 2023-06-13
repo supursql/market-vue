@@ -55,7 +55,6 @@ const createOrder = async () => {
     cartStore.updateNewList()
 }
 
-
 </script>
 
 <template>

@@ -40,6 +40,10 @@ export const useCartStore = defineStore('cart', () => {
         }   
     }
 
+     const clearCart = () => {
+        cartList.value = []
+     }
+
     const singleCheck = (skuId, selected) => {
         const item = cartList.value.find((item)=>item.skuId === skuId)
         item.selected = selected
@@ -62,6 +66,7 @@ export const useCartStore = defineStore('cart', () => {
         isAll,
         selectedCount,
         selectedPrice,
+        clearCart,
         singleCheck,
         addCart,
         delCart,
